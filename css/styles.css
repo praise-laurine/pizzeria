@@ -22,11 +22,13 @@ header{
 .main-nav{
     float: right;
     margin-top: 60px;
+
 }
 .main-nav li{
     display: inline-block;
     margin-left: 40px;
     list-style: none;
+    
 }
 .main-nav li a{
     color: #fff;
@@ -35,6 +37,24 @@ header{
     font-size: 90%;
     font-weight: 100;
 }
+.header-conent{
+    /* width: 1180px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid red; */
+    /* text-align: center; */
+}
 .header-conent h1{
     color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
+/* .btn{
+    display: inline-block;
+
+} */
