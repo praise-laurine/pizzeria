@@ -1,8 +1,12 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
+body{
+    overflow: hidden;
+    font-size: 20px;
+}
 header{
     background-image:  url("../images/pizaa-bg.jpg");
     background-repeat: no-repeat;
@@ -10,4 +14,27 @@ header{
     height: 100vh;
     /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0, 0.7)); */
 
+}
+.navbar{
+    margin: 0 auto;
+    max-width: 1180px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    list-style: none;
+}
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+.header-conent h1{
+    color: #fff;
 }
