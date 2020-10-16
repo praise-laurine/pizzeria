@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 20px;
 }
 header{
@@ -100,3 +100,22 @@ header{
     50%{color: #fff;}
     100%{color: #bf55ec;}
 }
+/* .title{
+    padding-bottom: 40px;
+} */
+/* .col-md-4{
+    display: flex;
+} */
+.image6{
+    height: 200px;
+    width: 282px;
+}
+.image4{
+    width: 100;
+}
+/* img{
+    padding: 10px;
+}
+.card{
+    padding: 10px;
+} */
