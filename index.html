@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
@@ -35,6 +36,7 @@
   </div>
 </header>
 
+
 <div class="container Varieties-section" id="variety">
   <h2 class="title">Varieties</h2>
   <div class="row">
@@ -47,7 +49,7 @@
     </div>
     </div>
     <div class="col-mb-4">
-      <div class="card mb-2">
+      <div class="card mb-2" id="card1">
       <img class="image2" src="images/bufallo.jpeg" alt="buffalo">
       <div class="card-body">
         <h3 class="card-title">Buffalo Chicken Sticks</h3>
@@ -55,7 +57,7 @@
       </div>
     </div>
     <div class="col-mb-4">
-      <div class="card mb-2">
+      <div class="card mb-2" id="card2">
       <img class="image3" src="images/periperi.jpeg" alt="periperi">
       <div class="card-body">
         <h3 class="card-title">Periperi Pizza</h3>
@@ -64,7 +66,7 @@
     </div>
     <div class="row">
       <div class="col-mb-4">
-        <div class="card mb-2">  
+        <div class="card mb-2" id="card3">  
         <img class="image4" src="images/rasp.jpeg" alt="rasp">
         <div class="card-body">
           <h3 class="card-title">Raspberry Dessert Pizza</h3>
@@ -72,15 +74,15 @@
       </div>
       </div>
       <div class="col-mb-4">
-        <div class="card mb-2">
-        <img class="image6" src="images/tikka.jpeg" alt="tikka">
+        <div class="card mb-2" id="card4">
+        <img class="image5" src="images/tikka.jpeg" alt="tikka">
         <div class="card-body">
           <h3 class="card-title">Chicken Tikka</h3>
         </div>
         </div>
       </div>
       <div class="col-mb-4">
-        <div class="card mb-2">
+        <div class="card mb-2" id="card5">
         <img class="image6" src="images/trm.jpg" alt="trm">  
         <div class="card-body">
           <h3 class="card-title">Sunchoke Pizza</h3>
@@ -88,8 +90,51 @@
         </div>
       </div>
   </div>  
-    
 <div>
+<div class="order-section" id="order-pizza">
+<div class="order-overlay" id="Ordernow"> 
+<div class="text-order" id="order-now">
+  <h2>Do not be left behind! Order your pizza here and it will be delievered at your door step!</h2>
+</div>
+<div class="row">
+  <div class="col-sm-5">
+    <form action="orderHere" id="order-form">
+      <label for="select">Select Your desired Flavor</label>
+      <select class="pizzaLabel" id="Flavor">
+      <option value="buffalo Chicken">Buffalo Chicken Sticks</option>
+      <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+      <option value="Chicken alfredo Pizza">Chicken Alfredo Pizza</option>
+      <option value="Raspberr Pizza">Raspberry Dessert Pizza</option>
+      <option value="periperi Pizza">Periperi Pizza</option>
+      <option value="Tikka Pizza">Chicken Tikka</option>
+    </select>
+    <label for="select">Select Size</label>
+    <select class="pizza-size" id="size">
+    <option selected value="0">Select size here</option>
+    <option value="large">Large -- sh. 1000</option>
+    <option value="medium">Medium -- sh. 850</option>
+    <option value="small">Small -- sh. 600</option>
+    </select><br>
+    <label for="crust">Choose your favorite Crust!</label>
+    <select class="pizzza-crust" id="crust">
+    <option selected value="0">Select your preferred crust!</option>
+    <option value="Crispy">Crispy -- sh. 200</option>
+    <option value="Stuffed">Stuffed -- sh. 150</option>
+    <option value="Gluten-free">Gluten-free-- sh. 180</option>
+    </select><br>
+    <label for="Toppings">Select Your Toppings at sh. 70 each</label>
+    <select class="pizza-toppig" id="toppings">
+    <!-- <option selected value="0">Select your preferred crust!</option> -->
+    <option value="Crispy">Tomatoes</option>
+    <option value="Stuffed">Green pepper</option>
+    <option value="Gluten-free">Mushroom</option>
+  </select><br>
+  <button type="submit" class="btn btn-orange proceed" id="button3">Order</button>
+</form>  
+</div> 
+</div>  
+</div>
+</div>
 </body>
 
 </html>

@@ -100,35 +100,98 @@ header{
     50%{color: #fff;}
     100%{color: #bf55ec;}
 }
-/* .title{
-    padding-bottom: 40px;
-} */
-/* .col-md-4{
-    display: flex;
-} */
+.col-md-4{
+    border-radius: 10%;
+    padding: 10px;
+  }
 .image6{
     height: 200px;
-    width: 282px;
+    width: 300px;
 }
-.image4{
+/* .image4{
     width: 100;
-}
+} */
  img{
     padding: 10px;
 }
 .card{
     padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 } 
+#card2{
+    width: 100%;
+}
+#card3{
+    width: 88%;
+    margin-top: 26px;
+    left: 11px;
+    height: -300%;
+}
+#card4{
+    width: 102%;
+    right: 15px;
+    /* margin-right: 10px;
+    margin-left: 10px; */
+}
+#card5{
+    right: -12px;
+    width: 100%;
+   
+    /* margin-right: 10px;
+    margin-left: 10px; */
+}
+
+
 .title{
     font-family: 'Gabriela', serif;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 30px;
     letter-spacing: 3px;
-    
+    color: #000;
+}
+.card-title{
+    text-align: center;
+    color: #bf55ec;
+    font-weight: 800;
+    font-family: 'Delius Swash Caps', cursive;
 }
 
 
+
+#order-now h2{
+     /* color: #fff; */
+     padding-top: 40px;
+     padding-bottom: 20px;
+     font-weight: bolder;
+} 
+
+option{
+    width: 100%;
+    align-items: center;
+}
+.row{
+    align-items: center;
+}
+#crust, #size, #Flavor, #toppings{
+    width: 100%;
+    /* background-color: #fff; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#button3{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10PX;
+}
+#order-now h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
 
 
 
