@@ -150,12 +150,24 @@ header{
     padding-bottom: 30px;
     letter-spacing: 3px;
     color: #000;
+    text-transform: uppercase;
 }
 .card-title{
     text-align: center;
     color: #bf55ec;
     font-weight: 800;
     font-family: 'Delius Swash Caps', cursive;
+}
+#aboutus{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    font-family: 'Copse', serif;
+    font-size: 20px;
+}
+.about h1{
+    font-family: 'Gabriela', serif;
+    text-transform: uppercase;
 }
 
 
