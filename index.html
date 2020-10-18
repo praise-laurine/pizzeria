@@ -22,7 +22,7 @@
       <ul class="main-nav">
         <li><a href="#home">Home</a></li>
         <li><a href="#varieties">Varieties</a></li>
-        <li><a href="#order">Order</a></li>
+        <li><a href="#aboutus">About Us</a></li>
         <li><a href="#contact us">Contact us</a></li>
       </ul>
     </div>
@@ -31,7 +31,7 @@
     <h1>Welcome to <span class="animation">pizzeria cafe</span>.<br>
         Best pizza Shop in town!
     </h1>
-    <a href="#order" class="btn btn-order" id="button">Click to order</a>
+    <a href="#order-form" class="btn btn-order" id="button">Click to order</a>
     <a href="#varieties" class="btn btn-order" id="button2">Show more</a>
   </div>
 </header>
@@ -47,7 +47,7 @@
   </div>
 </div>
 
-<div class="container Varieties-section" id="variety">
+<div class="container varieties-section" id="varieties">
   <h2 class="title">Varieties</h2>
   <div class="row">
     <div class="col-mb-4">
@@ -110,34 +110,34 @@
   <div class="col-sm-5">
     <form action="orderHere" id="order-form">
       <label for="select">Select Your desired Flavor</label>
-      <select class="pizzaLabel" id="Flavor">
-      <option value="buffalo Chicken">Buffalo Chicken Sticks</option>
-      <option value="Sunchoke Pizza">Sunchoke Pizza</option>
-      <option value="Chicken alfredo Pizza">Chicken Alfredo Pizza</option>
-      <option value="Raspberr Pizza">Raspberry Dessert Pizza</option>
-      <option value="periperi Pizza">Periperi Pizza</option>
-      <option value="Tikka Pizza">Chicken Tikka</option>
+      <select class="pizzaLabel" id="Flavor" required>
+      <option value="buffalo Chicken">Buffalo Chicken Sticks -- sh.500</option>
+      <option value="Sunchoke Pizza">Sunchoke Pizza -- sh.410</option>
+      <option value="Chicken alfredo Pizza">Chicken Alfredo Pizza -- sh.450</option>
+      <option value="Raspberry Pizza">Raspberry Dessert Pizza -- sh.600</option>
+      <option value="periperi Pizza">Periperi Pizza -- sh.550</option>
+      <option value="Tikka Pizza">Chicken Tikka -- sh.610</option>
     </select>
     <label for="select">Select Size</label>
-    <select class="pizza-size" id="size">
+    <select class="pizza-size" id="size" required>
     <option selected value="0">Select size here</option>
-    <option value="large">Large -- sh. 1000</option>
-    <option value="medium">Medium -- sh. 850</option>
+    <option value="large">Large -- sh. 800</option>
+    <option value="medium">Medium -- sh. 750</option>
     <option value="small">Small -- sh. 600</option>
     </select><br>
     <label for="crust">Choose your favorite Crust!</label>
-    <select class="pizzza-crust" id="crust">
+    <select class="pizzza-crust" id="crust" required>
     <option selected value="0">Select your preferred crust!</option>
     <option value="Crispy">Crispy -- sh. 200</option>
     <option value="Stuffed">Stuffed -- sh. 150</option>
     <option value="Gluten-free">Gluten-free-- sh. 180</option>
     </select><br>
-    <label for="Toppings">Select Your Toppings at sh. 70 each</label>
-    <select class="pizza-toppig" id="toppings">
+    <label for="Toppings">Select Your Toppings</label>
+    <select class="pizza-toppig" id="toppings" required>
     <!-- <option selected value="0">Select your preferred crust!</option> -->
-    <option value="Crispy">Tomatoes</option>
-    <option value="Stuffed">Green pepper</option>
-    <option value="Gluten-free">Mushroom</option>
+    <option value="Crispy">Tomatoes --sh.20</option>
+    <option value="Stuffed">Green pepper -- sh.50</option>
+    <option value="Gluten-free">Mushroom -- sh.70</option>
   </select><br>
   <button type="submit" class="btn btn-orange proceed" id="button3">Order</button>
 </form>  
@@ -171,14 +171,52 @@
           <td id="total"></td>
         </tr>  
       </tbody> 
-          
-      </table>
-      </div>
+    </table>
+    <button class="btn btn-orange addPizza">Add Pizza</button>
+     <button class="btn btn-orange" id="checkout">Checkout</button>
+    <button class="btn btn-orange deliver">Home delivery?</button>
+    <div class="delivery">
+      <form action="">
+      <div class="form-group">
+      <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+      <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+      <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+      <button class="btn btn-orange" id="final-order">Place Order</button>
+        </div>
+      </form>
+    </div>
+    </div>
   </div>
 </div>
 </div>  
 </div>
 </div>
+<!-- <div class="footer-bottom">
+  &copy;Laurine Praise | Pizzeria Cafe
+</footer> -->
+
+<!-- <div class="contact-section" id="contactUs">
+  <div class="contact-us">
+    <div class="row" id="contactDetails">
+        <div class="col-md-3">
+          <h2>Customer Care</h2>
+           <p>praiselaurine10@gmail.com</p>
+           <p>Tell: 02200346476</p> 
+           <p>Phone Number: +254700611601</p>
+           <p>pizzeriaCafe@gmail.com</p>
+        </div>
+        <div class="col-md-3 text-justify">
+          <h2>Location</h2>
+          <p>Pizzeria Cafe</p>
+          <p>RidgeWay mall | Kiambu road</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
 </body>
 
 </html>

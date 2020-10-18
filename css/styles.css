@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
 }
 body{
@@ -126,7 +126,7 @@ header{
     width: 88%;
     margin-top: 26px;
     left: 11px;
-    height: -300%;
+    height: -900px;
 }
 #card4{
     width: 102%;
@@ -204,7 +204,41 @@ option{
     font-weight: bolder;
     font-size: 20px;
 }
-
+#contactUs{
+color: #000;
+ text-align: center; 
+background-color: aqua;
+margin-top: 30px;
+height: 120%;
+width: 120%;
+font-weight: bolder;
+}
+#order-form{
+    top: 10px;
+}
+#order-pizza{
+    background-image: url("../images/pizaa-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color:#fff;
+    align-items: center;
+    overflow: hidden;
+}
+/* .footer-bottom {
+    background-color: black;
+    color:white;
+    height:50px;
+    text-align:center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+}
+ */
 
 
 
