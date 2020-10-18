@@ -111,7 +111,15 @@ Pizzeria.prototype.flavorPrice = function () {
     }
 }
 }    
-}  
+}
+$("#order-form").submit(function(event) {
+    event.preventDefault();
+    var PizzaFlavor = $("#Flavor").val();
+    var PizzaSize = $("#size").val();
+    var PizzaCrust = $("#crust").val();
+    var PizzaTopping = $("#toppings").val();
+    var newPizza = new pizza(PizzaFlavor, PizzaSize, PizzaCrust, PizzaTopping);
+})  
 
 
 }); 
