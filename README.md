@@ -7,7 +7,7 @@ This a web application that for pizzeria cafe that allows users to order pizza o
 - After my repository's name, Select Clone/download.
 - Open terminal command
 - Select Where you want to clone the project. eg desktop
-- git clone https://github.com/praise-laurine/delani-studio.git
+- git clone https://github.com/praise-laurine/pizzeria.git
 - Click Enter. And your clone will be created.
 - cd Delani-studio to navigate through the project directory
 - code . or atom . depending on the text editor you are using
