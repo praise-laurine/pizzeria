@@ -142,10 +142,10 @@
                     <option value="Gluten-free">Gluten-free-- sh. 180</option>
                   </select><br>
                   <label for="Toppings">Select Your Toppings</label>
-                  <select class="pizza-toppig" id="toppings" required>
-                    <option value="Crispy">Tomatoes --sh.20</option>
-                    <option value="Stuffed">Green pepper -- sh.50</option>
-                    <option value="Gluten-free">Mushroom -- sh.70</option>
+                  <select class="pizza-topping" id="toppings" required>
+                    <option value="tomato">Tomatoes --sh.20</option>
+                    <option value="pepper">Green pepper -- sh.50</option>
+                    <option value="mushroom">Mushroom -- sh.70</option>
                   </select><br>
                   <button type="submit" class="btn btn-orange proceed" id="button3">Order</button>
                 </form>
@@ -158,7 +158,10 @@
                     <table class="table table-sm  pizzaTable">
                       <thead>
                         <tr>
+                          
+                          
                           <th scope="col">Flavor</th>
+                          <th scope="col">Size</th>
                           <th scope="col">Crust</th>
                           <th scope="col">Topping</th>
                           <th scope="col">Total</th>
@@ -166,10 +169,10 @@
                       </thead>
                       <tbody id="ordersTaken">
                         <tr>
-                          <td id="pizzaName"></td>
+                          <td id="pizzaFlavor"></td>
                           <td id="pizzaSize"></td>
                           <td id="pizzaCrust"></td>
-                          <td id="pizzaToppoing"></td>
+                          <td id="pizzaTopping"></td>
                           <td id="total"></td>
                         </tr>
                       </tbody>

@@ -17,7 +17,7 @@ $(document).ready(function () {
                 return 820;
             }
 
-        } else if (this.size === "madium") {
+        } else if (this.size === "medium") {
             if (this.topping === "mushroom") {
                 return 820;
             } else if (this.topping === "Green pepper") {
@@ -25,11 +25,11 @@ $(document).ready(function () {
             } else {
                 return 770;
             }
-        } else {
+        } else if (this.size === "small") {
             if (this.topping === "mushroom") {
-                return 670;
-            } else if (this.topping === "Green pepper") {
                 return 650;
+            } else if (this.topping === "Green pepper") {
+                return 670;
             } else {
                 return 620;
             }
