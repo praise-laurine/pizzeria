@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    function Pizzeria(size, topping, crust, flavor) {
+    function Pizzeria(flavor, size, crust, topping) {
         this.flavor = flavor;
         this.crust = crust;
         this.topping = topping;
@@ -114,8 +114,8 @@ $(document).ready(function () {
             }
         }
     }
-    Pizzeria.prototype.flavorPrice = function () {
-        return this.crustPrice() + this.ToppingPrice() 
+    Pizzeria.prototype.totalPrice = function () {
+        return this.crustPrice() + this.ToppingPrice() + this.flavorPrice()
     }
 
     $("#order-form").submit(function (event) {
@@ -131,24 +131,20 @@ $(document).ready(function () {
         $("#size").val("");
         $("#crust").val("");
         $("#toppings").val("");
-
+         
         totalAmount = 0
         for (let i = 0; i < OrderNew.length; i++ ){
-            totalAmount += OrderNew[i].flavorPrice();
+            totalAmount += OrderNew[i].totalPrice();
         }
         $("#ordersTaken").append(
             "<tr>" +
-            '<th scope="orderCalculation">' +
+            '<td scope="orderCalculation">' +
             newPizza.flavor +
             " - " +
-            newPizza.size +
-            "  @ " +
-            newPizza.flavorPrice() +
-            "</th>" +
+            newPizza.flavorPrice () + 
+            "</td>" +
             "<td>" +
-            newPizza.topping +
-            " @ " +
-            newPizza.ToppingPrice() +
+            newPizza.size +
             "</td>" +
             "<td>" +
             newPizza.crust +
@@ -156,12 +152,17 @@ $(document).ready(function () {
             newPizza.crustPrice() +
             "</td>" +
             "<td>" +
-            newPizza.flavorPrice() +
+            newPizza.topping +
+            " @ " +
+            newPizza.ToppingPrice()  +
+            "</td>" +
+            "<td>" +
+            newPizza.totalPrice() +
             "</td>" +
             "</tr>"
         );
 
-        $("#order-summary").append("");
+        $("#ordersTaken").append("");
         if (OrderNew.length > 0) {
             $("#form-heading").empty();
             $("#form-heading").append("Make A New Order");
@@ -172,7 +173,7 @@ $(document).ready(function () {
 
         $("#totalAmount").empty();
         $("#totalAmount").append(totalAmount);
-        $(".totalAmount").show();
+        $("#totalAmount").show();
 
 });
 
@@ -183,7 +184,6 @@ $("#Checkout").click(function () {
 $("#checkoutForm").submit(function (event) {
     event.preventDefault();
     var name = $("#name").val();
-    // var name = $("#phone").val();
     var deliveryOption = $("#OptionDelivery").val();
     NameOfCustomer = name;
     $("#name").val("");
@@ -191,7 +191,7 @@ $("#checkoutForm").submit(function (event) {
     $(".checkout-info").hide();
     $("#Checkout").hide();
     $("#totalAmount").empty();
-    if (deliveryOption === "Home Delivery?") {
+    if (deliveryOption === "deliver") {
         $(".deliveryLocation").show();
         $(".deliveryCost").show();
         $("#totalAmount").empty();
@@ -201,8 +201,6 @@ $("#checkoutForm").submit(function (event) {
         $("#totalAmount").empty();
     $("#totalAmount").append(totalAmount);
     $(".TotalAmount").show();
-
-        $("#totalAmount").append(totalAmount);
     } else {
         alert(NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ". Your order will be ready for collection in the next one hours." + " Make sure you have the total amount for the order during the delivery to avoid delays." + " Incase there is any comment of complaint, Please reach out to us as soon as possible.");
     }
