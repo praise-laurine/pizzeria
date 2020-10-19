@@ -32,7 +32,7 @@
       <h1>Welcome to <span class="animation">pizzeria cafe</span>.<br>
         Best pizza Shop in town!
       </h1>
-      <!-- <a href="#order-form" class="btn btn-order" id="button">Click to order</a> -->
+      <a href="#order-form" class="btn btn-order" id="button">Click to order</a>
       <!-- <a href="#aboutus" class="btn btn-order" id="button2">Show more</a> -->
     </div>
   </header>
@@ -113,7 +113,7 @@
         <div class="order-section" id="order-pizza">
           <div class="order-overlay" id="Ordernow">
             <div class="text-order" id="order-now">
-              <h2>Do not be left behind! Order your pizza here and it will be delievered at your door step!</h2>
+              <h2 id="form-heading">Do not be left behind! Order your pizza here and it will be delievered at your door step!</h2>
             </div>
             <div class="row">
               <div class="col-sm-5">
@@ -143,7 +143,6 @@
                   </select><br>
                   <label for="Toppings">Select Your Toppings</label>
                   <select class="pizza-toppig" id="toppings" required>
-                    <!-- <option selected value="0">Select your preferred crust!</option> -->
                     <option value="Crispy">Tomatoes --sh.20</option>
                     <option value="Stuffed">Green pepper -- sh.50</option>
                     <option value="Gluten-free">Mushroom -- sh.70</option>
@@ -151,21 +150,15 @@
                   <button type="submit" class="btn btn-orange proceed" id="button3">Order</button>
                 </form>
               </div>
-              <div class="col-sm-7">
-                <div id="oderInfo">
-                  <p>Your order has been received! It will be processed and delivered within one hour of placing.</p>
-                  <p>Make sure you have the total amount for the order during the delivery to avoid delays.</p>
-                  <p>Incase of there is any comment of complaint, Please reach out to us as soon as possible.</p>
-                  <p id="regards">Regards, Management</p>
-                </div>
+              <div class="col-sm-7" id="orderClass">
+               
                 <div class="orderCalculation">
                   <h2>Your Order is:</h2>
                   <div id="your-orders">
                     <table class="table table-sm  pizzaTable">
                       <thead>
                         <tr>
-                          <th scope="col">Name</th>
-                          <th scope="col">Size</th>
+                          <th scope="col">Flavor</th>
                           <th scope="col">Crust</th>
                           <th scope="col">Topping</th>
                           <th scope="col">Total</th>
@@ -181,19 +174,22 @@
                         </tr>
                       </tbody>
                     </table>
-                    <!-- <button class="btn btn-orange" id="addPizza">Add Pizza</button> -->
-                    <button class="btn btn-orange" id="checkout">Checkout</button>
-                    <!-- <button class="btn btn-orange" id="deliver">Home delivery?</button> -->
-                    <div class="checkout hidden">
+                    <p class="deliveryCost hidden">
+                      Delivery Cost: Ksh. <span id="delivery-cost"></span>
+                  </p>
+                  <p class="TotalAmount hidden">
+                      Total Amount: Ksh. <span id="totalAmount"></span>
+                  </p>
+                  <br /><br />
+                    <button class="btn btn-orange" id="Checkout">Checkout</button>
+                    <div class="checkout-info hidden">
                       <h3 id="check">Check form</h3>
-                      <form action="">
+                      <form action="" id="checkoutForm">
       <div class="form-group">
       <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-      <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
-      <!-- <input type="text" id="location" class="form-control mb-3" placeholder="Desired delivery option"> -->
+      <!-- <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number"> -->
       <label for="delivery">Desired Delivery Option</label>
-      <select class="form-control" id="OptionDeliver" required>
-        <!-- <option value="">...</option> -->
+      <select class="form-control" id="OptionDelivery" required>
         <option value="deliver">Home Delivery?</option>
         <option value="collect">Pick Up</option>
     </select>
@@ -202,7 +198,7 @@
       </form>
     </div>
     <div class="deliveryLocation hidden">
-      <form id="location-form">
+      <form id="locationForm">
           <h3>Enter your location</h3>
           <div class="form-group">
               <label>Estate</label>
@@ -211,7 +207,7 @@
           </div>
           <div class="form-group">
               <label for="exampleFormControlSelect1">House Number</label>
-              <input type="text" class="form-control" id="house-number" placeholder="Enter Your Name"
+              <input type="text" class="form-control" id="houseNumber" placeholder="Enter Your Name"
                   required />
           </div>
 
@@ -226,10 +222,7 @@
             </div>
           </div>
         </div>
-        <!-- <div class="footer-bottom">
-  &copy;Laurine Praise | Pizzeria Cafe
-</footer> -->
-
+      
         <div class="contact-section" id="contactus">
           <div class="contact-us">
             <div class="row" id="contactDetails">

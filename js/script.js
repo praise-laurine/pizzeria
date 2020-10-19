@@ -183,7 +183,7 @@ $("#Checkout").click(function () {
 $("#checkoutForm").submit(function (event) {
     event.preventDefault();
     var name = $("#name").val();
-    var name = $("#phone").val();
+    // var name = $("#phone").val();
     var deliveryOption = $("#OptionDelivery").val();
     NameOfCustomer = name;
     $("#name").val("");
@@ -221,16 +221,5 @@ $("#locationForm").submit(function (event) {
     $(".TotalAmount").show();
     alert(NameOfCustomer + ": Your new total bill is Ksh. " + totalAmount + ". Your order will be delivered to " + estate + ", " + houseNumber + " in the next one hour." + " Make sure you have the total amount for the order during the delivery to avoid delays." + " Incase there is any comment of complaint, Please reach out to us as soon as possible");
 });
-// $("#contacts").submit(function (event) {
-//     event.preventDefault();
-//     var name1 = $("#form1").val();
-//     var email1 = $("#form2").val();
-//     var message1 = $("#form3").val();
-//     alert("Hello! " + name1 + "," + " We have received your message. Thank you for reaching out to us. ");
-
-// });
-
-
-
 
 });
