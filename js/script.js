@@ -202,7 +202,7 @@ $("#checkoutForm").submit(function (event) {
     $("#totalAmount").append(totalAmount);
     $(".TotalAmount").show();
     } else {
-        alert(NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ". Your order will be ready for collection in the next one hours." + " Make sure you have the total amount for the order during the delivery to avoid delays." + " Incase there is any comment of complaint, Please reach out to us as soon as possible.");
+        alert(NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ". Your order will be ready for collection in the next one hour." + " Make sure you have the total amount for the order during the delivery to avoid delays." + " Incase there is any comment of complaint, Please reach out to us as soon as possible.");
     }
 });
 
