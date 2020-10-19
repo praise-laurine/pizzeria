@@ -33,7 +33,7 @@
         Best pizza Shop in town!
       </h1>
       <a href="#order-form" class="btn btn-order" id="button">Click to order</a>
-      <!-- <a href="#aboutus" class="btn btn-order" id="button2">Show more</a> -->
+      <a href="#aboutus" class="btn btn-order" id="button2">Show more</a>
     </div>
   </header>
 
@@ -120,26 +120,26 @@
                 <form id="order-form">
                   <label for="select">Select Your desired Flavor</label>
                   <select class="pizzaLabel" id="Flavor" required>
-                    <option value="buffalo Chicken">Buffalo Chicken Sticks -- sh.500</option>
-                    <option value="Sunchoke Pizza">Sunchoke Pizza -- sh.410</option>
-                    <option value="Chicken alfredo Pizza">Chicken Alfredo Pizza -- sh.450</option>
-                    <option value="Raspberry Pizza">Raspberry Dessert Pizza -- sh.600</option>
-                    <option value="periperi Pizza">Periperi Pizza -- sh.550</option>
-                    <option value="Tikka Pizza">Chicken Tikka -- sh.610</option>
+                    <option value="buffalo Chicken">Buffalo Chicken Sticks</option>
+                    <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                    <option value="Chicken alfredo Pizza">Chicken Alfredo Pizza</option>
+                    <option value="Raspberry Pizza">Raspberry Dessert Pizza</option>
+                    <option value="periperi Pizza">Periperi Pizza</option>
+                    <option value="Tikka Pizza">Chicken Tikka</option>
                   </select>
                   <label for="select">Select Size</label>
                   <select class="pizza-size" id="size" required>
                     <option selected value="0">Select size here</option>
-                    <option value="large">Large -- sh. 800</option>
-                    <option value="medium">Medium -- sh. 750</option>
-                    <option value="small">Small -- sh. 600</option>
+                    <option value="large">Large</option>
+                    <option value="medium">Medium</option>
+                    <option value="small">Small</option>
                   </select><br>
                   <label for="crust">Choose your favorite Crust!</label>
                   <select class="pizzza-crust" id="crust" required>
                     <option selected value="0">Select your preferred crust!</option>
-                    <option value="Crispy">Crispy -- sh. 200</option>
-                    <option value="Stuffed">Stuffed -- sh. 150</option>
-                    <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                    <option value="Crispy">Crispy</option>
+                    <option value="Stuffed">Stuffed</option>
+                    <option value="Gluten-free">Gluten-free</option>
                   </select><br>
                   <label for="Toppings">Select Your Toppings</label>
                   <select class="pizza-topping" id="toppings" required>
@@ -168,13 +168,7 @@
                         </tr>
                       </thead>
                       <tbody id="ordersTaken">
-                        <tr>
-                          <td id="pizzaFlavor"></td>
-                          <td id="pizzaSize"></td>
-                          <td id="pizzaCrust"></td>
-                          <td id="pizzaTopping"></td>
-                          <td id="total"></td>
-                        </tr>
+                        
                       </tbody>
                     </table>
                     <p class="deliveryCost hidden">
@@ -190,7 +184,6 @@
                       <form action="" id="checkoutForm">
       <div class="form-group">
       <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-      <!-- <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number"> -->
       <label for="delivery">Desired Delivery Option</label>
       <select class="form-control" id="OptionDelivery" required>
         <option value="deliver">Home Delivery?</option>

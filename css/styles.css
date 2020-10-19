@@ -1,10 +1,8 @@
 *{
-    /* margin: 0;
-    padding: 0; */
+    
     box-sizing: border-box;
 }
 body{
-    /* overflow: hidden; */
     font-size: 20px;
 }
 header{
@@ -13,7 +11,7 @@ header{
     background-size: cover;
     height: 100vh;
     font-family: 'Flamenco', cursive;
-  /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0, 0.7)); */
+  
 }
 
 
@@ -44,13 +42,10 @@ header{
     border-bottom: 2px solid #bf55ec;
 }
 .header-conent{
-    /* width: 1180px; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border: 1px solid red; */
-    /* text-align: center; */
 }
 .header-conent h1{
     color: #fff;
@@ -108,9 +103,7 @@ header{
     height: 200px;
     width: 300px;
 }
-/* .image4{
-    width: 100;
-} */
+
  img{
     padding: 10px;
 }
@@ -131,15 +124,10 @@ header{
 #card4{
     width: 102%;
     right: 15px;
-    /* margin-right: 10px;
-    margin-left: 10px; */
 }
 #card5{
     right: -12px;
     width: 100%;
-   
-    /* margin-right: 10px;
-    margin-left: 10px; */
 }
 
 
@@ -173,7 +161,7 @@ header{
 
 
 #order-now h2{
-     /* color: #fff; */
+    
      padding-top: 40px;
      padding-bottom: 20px;
      font-weight: bolder;
@@ -188,7 +176,6 @@ option{
 }
 #crust, #size, #Flavor, #toppings{
     width: 100%;
-    /* background-color: #fff; */
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -222,11 +209,10 @@ font-weight: bolder;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    /* width: 100%; */
     color:#fff;
     align-items: center;
     overflow: hidden;
-    /* background-color: rgb(135, 235, 165); */
+    
 }
 #Ordernow{
     background: rgba(0, 0, 0, 0.7);
@@ -260,19 +246,7 @@ font-weight: bolder;
 th, td, th{
     color: #fff;
 }
-/* .footer-bottom {
-    background-color: black;
-    color:white;
-    height:50px;
-    text-align:center;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    padding-top: 20px;
-    width: 100%;
-    font-family: 'Merriweather', serif;
-}
- */
+
 
 
 
